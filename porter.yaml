@@ -1,3 +1,11 @@
+
 apps:
-  web-two:
+  web:
     run: node index.js
+
+build:
+  method: docker
+  dockerfile: ./Dockerfile
+
+release:
+  run: ls
