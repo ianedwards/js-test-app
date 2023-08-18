@@ -6,6 +6,7 @@ apps:
 build:
   method: docker
   dockerfile: ./Dockerfile
+  context: ./src
 
 release:
   run: ls
