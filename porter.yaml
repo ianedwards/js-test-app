@@ -1,12 +1,9 @@
+version: v2
+name: js-test-app
 
-apps:
+services:
   web:
     run: node index.js
-
-build:
-  method: docker
-  dockerfile: ./Dockerfile
-  context: ./src
 
 release:
   run: ls
