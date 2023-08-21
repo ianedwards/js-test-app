@@ -5,5 +5,5 @@ services:
   web:
     run: node index.js
 
-release:
+predeploy:
   run: ls
