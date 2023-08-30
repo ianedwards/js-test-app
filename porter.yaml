@@ -4,7 +4,7 @@ name: test
 services:
   web:
     run: node index.js
-    private: false
+    private: true
 
 predeploy:
   run: ls
