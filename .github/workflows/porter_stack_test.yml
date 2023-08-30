@@ -26,5 +26,5 @@ jobs:
         PORTER_PROJECT: "1"
         PORTER_STACK_NAME: test
         PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
-        PORTER_COMMIT_SHA: ${{ steps.vars.outputs.sha_long }}
+        PORTER_COMMIT_SHA: ${{ steps.commitsha.outputs.sha_long }}
         PORTER_TOKEN: ${{ secrets.PORTER_STACK_1_1 }}
