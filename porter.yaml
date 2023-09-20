@@ -5,7 +5,7 @@ services:
   web:
     run: node index.js
     autoscaling:
-      enabled: true
+      enabled: false
 
 predeploy:
   run: ls
