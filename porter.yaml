@@ -4,7 +4,6 @@ name: js-test-app
 services:
   web:
     run: node index.js
-    private: false
 
 predeploy:
   run: ls
