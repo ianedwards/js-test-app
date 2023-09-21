@@ -12,5 +12,4 @@ predeploy:
 
 build:
   method: docker
-  context: ./
   dockerfile: ./Dockerfile
