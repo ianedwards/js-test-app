@@ -9,3 +9,8 @@ services:
 
 predeploy:
   run: ls
+
+build:
+  method: docker
+  context: ./
+  dockerfile: ./Dockerfile
