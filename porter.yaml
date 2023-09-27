@@ -7,7 +7,3 @@ services:
 
 predeploy:
   run: ls
-
-build:
-  method: docker
-  dockerfile: ./Dockerfile
