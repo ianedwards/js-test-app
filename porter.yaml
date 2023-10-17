@@ -1,0 +1,7 @@
+version: v2
+services:
+- name: web
+  run: node index.js
+
+predeploy:
+  run: ls
