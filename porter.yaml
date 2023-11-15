@@ -1,0 +1,12 @@
+version: v2
+
+services:
+- name: web
+  port: 3000
+  run: node index.js
+
+env:
+  SPONSOR: ian
+
+predeploy:
+  run: ls
