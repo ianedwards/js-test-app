@@ -4,54 +4,6 @@ services:
 - name: web
   port: 3000
   run: node index.js
-- name: two-minutes
-  run: echo 'two_minutes'
-  type: job
-  cpuCores: 0.19
-  ramMegabytes: 400
-  terminationGracePeriodSeconds: 30
-  cron: '*/2 * * * *'
-  timeoutSeconds: 3600
-- name: six-hours
-  run: echo 'six hours'
-  type: job
-  cpuCores: 0.19
-  ramMegabytes: 400
-  terminationGracePeriodSeconds: 30
-  cron: 0 */6 * * *
-  timeoutSeconds: 3600
-- name: hourly
-  run: echo 'hourly'
-  type: job
-  cpuCores: 0.19
-  ramMegabytes: 400
-  terminationGracePeriodSeconds: 30
-  cron: 0 * * * *
-  timeoutSeconds: 3600
-- name: ten-minutes
-  run: echo 'ten_minutes'
-  type: job
-  cpuCores: 0.19
-  ramMegabytes: 400
-  terminationGracePeriodSeconds: 30
-  cron: '*/10 * * * *'
-  timeoutSeconds: 3600
-- name: daily
-  run: echo 'daily'
-  type: job
-  cpuCores: 0.19
-  ramMegabytes: 400
-  terminationGracePeriodSeconds: 30
-  cron: 0 4 * * *
-  timeoutSeconds: 3600
-- name: one-of
-  run: echo 'one of'
-  type: job
-  cpuCores: 0.19
-  ramMegabytes: 400
-  terminationGracePeriodSeconds: 30
-  cron: 0 4 * * *
-  timeoutSeconds: 3600
   
 env:
   SPONSOR: ian
