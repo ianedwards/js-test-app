@@ -18,10 +18,10 @@ jobs:
       timeout-minutes: 30
       run: exec porter apply
       env:
-        PORTER_CLUSTER: "4"
+        PORTER_CLUSTER: "1"
         PORTER_HOST: https://loon-above-arguably.ngrok-free.app
         PORTER_PR_NUMBER: ${{ github.event.number }}
         PORTER_PROJECT: "1"
         PORTER_STACK_NAME: js-test-app
         PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
-        PORTER_TOKEN: ${{ secrets.PORTER_STACK_1_4 }}
+        PORTER_TOKEN: ${{ secrets.PORTER_STACK_1_1 }}
