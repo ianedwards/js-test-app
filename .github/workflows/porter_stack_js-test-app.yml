@@ -19,6 +19,7 @@ jobs:
       run: exec porter apply
       env:
         PORTER_CLUSTER: "1"
+        PORTER_DEPLOYMENT_TARGET_ID: 1b8b9447-6ac4-4c43-a2a8-f8094d1699cd
         PORTER_HOST: https://loon-above-arguably.ngrok-free.app
         PORTER_PR_NUMBER: ${{ github.event.number }}
         PORTER_PROJECT: "1"
